@@ -208,7 +208,7 @@ export default function Home() {
         )}
       </main>
       {data && (
-        <main className="my-10 py-10 bg-slate-700 rounded-lg items-start flex flex-col justify-start gap-2">
+        <main className="my-10 overflow-hidden py-10 bg-slate-700 rounded-lg items-start flex flex-col justify-start gap-2">
           <div className="w-full">
             <div className="rounded-md flex justify-center items-center ">
               <Image
@@ -224,9 +224,9 @@ export default function Home() {
           </div>
           <div className="pl-3 pt-3">
             <div className="pt-10"></div>
-            <h1 className="text-sm lg:text-xl text-white ">
+            <h1 className="text-sm overflow-hidden lg:text-xl text-white ">
               Title:{" "}
-              <span className="text-white  text-md lg:text-2xl font-bold ">
+              <span className="text-white overflow-hidden text-md lg:text-2xl font-bold ">
                 {data?.server_filename}
               </span>
             </h1>
@@ -254,7 +254,7 @@ export default function Home() {
               className="py-0 bg-blue-700 mt-3 text-xl font-bold"
             >
               {" "}
-              {data?.dlink}
+              Download
             </Button>
           </Link>
         </main>
