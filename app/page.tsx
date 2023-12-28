@@ -153,11 +153,11 @@ export default function Home() {
 
   return (
     <div className="pt-6 mx-12">
-      <main className="mt-6 py-10 bg-slate-700 rounded-lg items-center flex flex-col justify-center gap-2">
-        <h1 className="text-xl sm:text-3xl font-bold text-center text-white">
-          Terabox Downloader
+      <main className="mt-6 py-10 bg-[#fff] rounded-lg items-center flex flex-col justify-center gap-2">
+        <h1 className="text-xl sm:text-3xl font-bold text-center text-[#0a0a0a]">
+          Terabox Direct Generator
         </h1>
-        <p className="text-center text-white">Enter your Terabox link below</p>
+        <p className="text-center text-[#929292]">Enter your Terabox link below</p>
         <div className="flex flex-col justify-center ">
           <div className="self-center text-black">
             <Input
@@ -170,7 +170,7 @@ export default function Home() {
         </div>
         <div className="self-center">
           <Button
-            className="bg-green-600"
+            className="bg-[#5bc8fb]"
             disabled={disableInput}
             onClick={Submit}
           >
@@ -208,7 +208,7 @@ export default function Home() {
         )}
       </main>
       {data && (
-        <main className="my-10 overflow-hidden py-10 bg-slate-700 rounded-lg items-start flex flex-col justify-start gap-2">
+        <main className="my-10 overflow-hidden py-10 bg-[#fff] rounded-lg items-start flex flex-col justify-start gap-2">
           <div className="w-full">
             <div className="rounded-md flex justify-center items-center ">
               <Image
@@ -226,19 +226,19 @@ export default function Home() {
             <div className="pt-10"></div>
             <h1 className="text-sm overflow-hidden lg:text-xl text-white ">
               Title:{" "}
-              <span className="text-white overflow-hidden text-md lg:text-2xl font-bold ">
+              <span className="text-[#0a0a0a] overflow-hidden text-md lg:text-2xl font-bold ">
                 {data?.server_filename}
               </span>
             </h1>
             <h1 className="text-sm lg:text-xl text-white ">
               File Size:{" "}
-              <span className="text-white text-md lg:text-2xl font-bold ">
+              <span className="text-[#0a0a0a] text-md lg:text-2xl font-bold ">
                 {getFormattedSize(data.size)}
               </span>
             </h1>
             <h1 className="text-sm lg:text-xl text-white ">
               Uploaded On:{" "}
-              <span className="text-white  text-md lg:text-2xl font-bold ">
+              <span className="text-[#0a0a0a]  text-md lg:text-2xl font-bold ">
                 {convertEpochToDateTime(data.server_ctime)}
               </span>
             </h1>
@@ -251,7 +251,7 @@ export default function Home() {
           >
             <Button
               variant="default"
-              className="py-0 bg-blue-700 mt-3 text-xl font-bold"
+              className="py-0 bg-[#207ae4] mt-3 text-xl font-bold"
             >
               {" "}
               Download
@@ -261,4 +261,4 @@ export default function Home() {
       )}
     </div>
   );
-}
+              }
